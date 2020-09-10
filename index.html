@@ -45,6 +45,64 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="button-burger"
+          aria-expanded="true"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            class="close-menu"
+          >
+            <use
+              class="icon-close"
+              href="./image/mobile/symbol-defs.svg#close-menu"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./image/mobile/symbol-defs.svg#menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+          <div class="nav-container">
+            <ul class="burger-nav list">
+              <li class="burger-list block-link">
+                <a href="./index.html" class="link-activ">Студия</a>
+              </li>
+              <li class="burger-list">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="burger-list">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="address-container">
+            <ul class="burger-address list">
+              <li class="burger-mail">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="envelopemail" width="16" height="12">
+                    <use href="./image/symbol-defs.svg#icon-envelopemail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="burger-phone">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="envelopemail" width="10" height="15">
+                    <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -88,35 +146,80 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section drop">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-activity list">
             <li class="activity-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/desktop.jpg    1x,
+                    ./image/desktop/desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="photo"
+                  src="./image/desktop/desktop.jpg"
+                  alt="десктопные приложения"
+                  width="370"
+                />
+              </picture>
+              <!--<img
                 class="photo"
                 src="./image/desktop.jpg"
                 alt="десктопные приложения"
                 width="370"
-              />
+              />-->
               <h3>Десктопные приложения</h3>
             </li>
             <li class="activity-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/boxmobile.jpg    1x,
+                    ./image/desktop/boxmobile@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="photo"
+                  src="./image/desktop/boxmobile.jpg"
+                  alt="мобильные приложения"
+                  width="370"
+                />
+              </picture>
+              <!--<img
                 class="photo"
                 src="./image/boxmobile.jpg"
                 alt="мобильные приложения"
                 width="370"
-              />
+              />-->
               <h3>Мобильные приложения</h3>
             </li>
             <li class="activity-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/imgdesigner.jpg    1x,
+                    ./image/desktop/imgdesigner@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="photo"
+                  src="./image/desktop/imgdesigner.jpg"
+                  alt="дизайнерские решения"
+                  width="370"
+                />
+              </picture>
+              <!--<img
                 class="photo"
                 src="./image/imgdesigner.jpg"
                 alt="дизайнерские решения"
                 width="370"
-              />
+              />-->
               <h3>Дизайнерские решения</h3>
             </li>
           </ul>
@@ -127,12 +230,41 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="section-command list">
             <li class="command-list">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/demyanenko.jpg    1x,
+                    ./image/desktop/demyanenko@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/demyanenko.jpg    1x,
+                    ./image/tablet/demyanenko@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/demyanenko.jpg    1x,
+                    ./image/mobile/demyanenko@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="command-photo"
+                  src="./image/desktop/demyanenko.jpg"
+                  alt="фото Игоря Демьяненко"
+                  width="270"
+                />
+              </picture>
+              <!--<img
                 class="command-photo"
                 src="./image/product-designer.jpg"
                 alt="фото Игоря Демьяненко"
                 width="270"
-              />
+              />-->
               <h3>Игорь Демьяненко</h3>
               <p>Product Designer</p>
               <ul class="social list">
@@ -167,12 +299,41 @@
               </ul>
             </li>
             <li class="command-list">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/repina.jpg    1x,
+                    ./image/desktop/repina@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/repina.jpg    1x,
+                    ./image/tablet/repina@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/repina.jpg    1x,
+                    ./image/mobile/repina@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="command-photo"
+                  src="./image/desktop/repina.jpg"
+                  alt="фото Ольги Репиной"
+                  width="270"
+                />
+              </picture>
+              <!--<img
                 class="command-photo"
                 src="./image/frontend-developer.jpg"
                 alt="фото Ольги Репиной"
                 width="270"
-              />
+              />-->
               <h3>Ольга Репина</h3>
               <p>Frontend Developer</p>
               <ul class="social list">
@@ -207,12 +368,41 @@
               </ul>
             </li>
             <li class="command-list">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/tarasov.jpg    1x,
+                    ./image/desktop/tarasov@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/tarasov.jpg    1x,
+                    ./image/tablet/tarasov@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/tarasov.jpg    1x,
+                    ./image/mobile/tarasov@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="command-photo"
+                  src="./image/desktop/tarasov.jpg"
+                  alt="фото Николая Тарасова"
+                  width="270"
+                />
+              </picture>
+              <!--<img
                 class="command-photo"
                 src="./image/marketing.jpg"
                 alt="фото Николая Тарасова"
                 width="270"
-              />
+              />-->
               <h3>Николай Тарасов</h3>
               <p>Marketing</p>
               <ul class="social list">
@@ -247,12 +437,41 @@
               </ul>
             </li>
             <li class="command-list">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/ermakov.jpg    1x,
+                    ./image/desktop/ermakov@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/ermakov.jpg    1x,
+                    ./image/tablet/ermakov@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/ermakov.jpg    1x,
+                    ./image/mobile/ermakov@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="command-photo"
+                  src="./image/desktop/ermakov.jpg"
+                  alt="фото Михаила Ермакова"
+                  width="270"
+                />
+              </picture>
+              <!--<img
                 class="command-photo"
                 src="./image/ui-designer.jpg"
                 alt="фото Михаила Ермакова"
                 width="270"
-              />
+              />-->
               <h3>Михаил Ермаков</h3>
               <p>UI Designer</p>
               <ul class="social list">
@@ -486,5 +705,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-burger.js"></script>
   </body>
 </html>

@@ -78,3 +78,42 @@
   background-image: url(../image/icon-send.png);
   background-size: contain;
 }
+
+.button-burger {
+  @include for-size(mobile-only) {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.close-menu:hover,
+.close-menu:focus {
+  @include for-size(mobile-only) {
+    fill: $changing-text-color;
+  }
+}
+
+.icon-close {
+  @include for-size(mobile-only) {
+    display: flex;
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.icon-menu {
+  @include for-size(mobile-only) {
+    display: flex;
+    width: 24px;
+    height: 16px;
+  }
+}

@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/normalize";
 @import "./base/fonts";
 @import "./base/common";
@@ -6,6 +7,7 @@
 @import "./components/social";
 @import "./components/buttons";
 @import "./components/modal";
+@import "./components/modal-burger";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/section-qualities";
