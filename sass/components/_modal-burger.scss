@@ -27,6 +27,7 @@
     padding: 60px 0;
     background-color: $third-text-color;
     text-align: center;
+    justify-content: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 2;
@@ -123,17 +124,16 @@
     display: block;
     align-items: center;
     justify-content: center;
-    isplay: none;
   }
 }
 
-.address-container > .burger-address {
+.burger-address {
   @include for-size(mobile-only) {
-    display: block;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-left: 0;
+    padding-inline-start: 0;
+    //width: 100%;
+    //padding-left: 0;
   }
 }
 
@@ -160,12 +160,12 @@
 .burger-address > .burger-mail {
   @include for-size(mobile-only) {
     display: flex;
-    text-align: center;
+    align-items: center;
     width: 100%;
     //width: 161px;
     //height: 16px;
     margin-bottom: 16px;
-    padding-left: 140px;
+    //padding-left: 140px;
   }
 }
 
@@ -176,11 +176,10 @@
 .burger-address > .burger-phone {
   @include for-size(mobile-only) {
     display: flex;
-    text-align: center;
+    align-items: center;
     width: 100%;
     //width: 161px;
     //height: 16px;
-    margin-bottom: 16px;
-    padding-left: 151px;
+    //padding-left: 151px;
   }
 }
