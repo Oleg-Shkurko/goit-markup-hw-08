@@ -1191,7 +1191,7 @@ body {
 
 @media (max-width: 767px) {
   .address-container {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -1199,7 +1199,7 @@ body {
 
 @media (max-width: 767px) {
   .burger-address {
-    align-items: center;
+    text-align: center;
     justify-content: center;
     padding-inline-start: 0;
   }
@@ -1241,6 +1241,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    padding-left: 9px;
   }
 }
 

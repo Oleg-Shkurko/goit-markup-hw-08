@@ -121,7 +121,7 @@
 
 .address-container {
   @include for-size(mobile-only) {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -129,7 +129,7 @@
 
 .burger-address {
   @include for-size(mobile-only) {
-    align-items: center;
+    text-align: center;
     justify-content: center;
     padding-inline-start: 0;
     //width: 100%;
@@ -162,10 +162,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    //width: 161px;
-    //height: 16px;
     margin-bottom: 16px;
-    //padding-left: 140px;
   }
 }
 
@@ -178,8 +175,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    //width: 161px;
-    //height: 16px;
-    //padding-left: 151px;
+    padding-left: 9px;
   }
 }
