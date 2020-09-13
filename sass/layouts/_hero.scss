@@ -88,6 +88,10 @@
   }
   @include for-size(tablet-landscape) {
     width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 118px 204px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -108,6 +112,11 @@
   }
   @include for-size(desktop) {
     width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 200px 267px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

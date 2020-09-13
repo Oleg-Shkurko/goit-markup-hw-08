@@ -264,10 +264,13 @@
 }
 
 .modal-checkbox > .contract-label {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   font-style: normal;
   font-weight: normal;
-  // font-size: 14px;
-  // line-height: 24px;
+  font-size: 12px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
 

@@ -1,5 +1,6 @@
 .clients {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-left: 0;
@@ -21,10 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 170px;
-  // height: 90px;
+  width: 240px;
+  height: 90px;
 
-  @include for-size(mobile-only) {
+  @include for-size(tablet-portrait) {
     width: 210px;
     height: 90px;
   }
@@ -39,7 +40,7 @@
 }
 
 .clients-list:not(:last-child) {
-  // margin-right: 30px;
+  margin-bottom: 30px;
 
   @include for-size(desktop) {
     margin-right: 30px;
@@ -53,20 +54,44 @@
 }
 
 .clients-list:nth-child(-n + 3) {
-  @include for-size(tablet-only) {
+  @include for-size(tablet-landscape) {
     margin-bottom: 30px;
   }
 }
 
 .clients-list:nth-child(2n + 1) {
-  @include for-size(mobile-only) {
+  @include for-size(tablet-portrait) {
     margin-right: 30px;
   }
 }
 
-.clients-list:nth-child(-n + 4) {
-  @include for-size(mobile-only) {
-    margin-bottom: 30px;
+.clients-list:nth-child(3n + 3) {
+  @include for-size(tablet-landscape) {
+    margin-right: 0;
+  }
+}
+
+.clients-list:nth-child(4) {
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
+  }
+}
+
+.clients-list:nth-child(5) {
+  @include for-size(tablet-portrait) {
+    margin-bottom: 0;
+  }
+}
+
+.clients-list:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list:nth-child(-n + 3) {
+  @include for-size(desktop) {
+    margin-bottom: 0;
   }
 }
 

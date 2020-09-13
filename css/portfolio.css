@@ -458,7 +458,7 @@ body {
 }
 
 .section {
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 480px) {
@@ -576,12 +576,13 @@ body {
 }
 
 .modal .modal-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   min-width: 200px;
   height: 50px;
   padding: 10px 55px;
-  margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   border: 1px solid transparent;
   color: #ffffff;
@@ -1065,6 +1066,7 @@ body {
 
 .top-margin {
   margin-bottom: 0;
+  padding-top: 60px;
 }
 
 @media (min-width: 480px) {
@@ -1087,6 +1089,7 @@ body {
 
 .section-filter {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
 }
 
@@ -1180,6 +1183,10 @@ body {
   }
 }
 
+.group-list {
+  width: calc(100%);
+}
+
 @media (min-width: 480px) {
   .group-list {
     width: calc(100%);
@@ -1271,22 +1278,45 @@ body {
 }
 
 .photo {
-  display: block;
   width: 100%;
-  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .photo {
+    width: calc(100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .photo {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .group-list-box {
   position: relative;
   width: 100%;
-  height: 294px;
   overflow: hidden;
 }
 
 .overlay {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
   top: 0;
   left: 0;
+  width: 100%;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
